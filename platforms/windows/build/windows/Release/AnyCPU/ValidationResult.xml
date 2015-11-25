@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT OVERALL_RESULT="PASS" VERSION="3.3" LATEST_VERSION="FALSE" UPDATE_DOWNLOAD_URL="http://go.microsoft.com/fwlink/?LinkID=246599&amp;amp;clcid=0x409" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="Romiracle" OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="UI" ReportGenerationTime="17-Jul-15 6:36:27 PM" ID="4fe06714d0e7bf0bc9463ae3395d9251">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Clean reversible install test" RATIONALE="A clean, reversible, installation allows users to successfully manage (deploy, and remove) applications on their system." />
+    <REQUIREMENT NUMBER="2" TITLE="Install to the correct folders test" RATIONALE="Windows provides specific locations in the file system to store programs and software components, shared application data, and application data specific to a user." />
+    <REQUIREMENT NUMBER="3" TITLE="Digitally signed file test" RATIONALE="An Authenticode digital signature allows users to be sure that the software is genuine. It also allows detection if a file has been tampered with e.g. infected by a virus." />
+    <REQUIREMENT NUMBER="4" TITLE="Support x64 Windows test" RATIONALE="To maintain compatibility with 64-bit versions of Windows, it is necessary that applications should natively support 64-bit or at minimum 32-bit Windows based applications to run seamlessly on 64-bit." />
+    <REQUIREMENT NUMBER="5" TITLE="OS version checking test" RATIONALE="Applications must not perform version checks for equality (== 5.1). If you need a specific feature, check whether the feature is available. If you need Windows XP, check for Windows XP or later (&gt;= 5.1), This way, your detection code will continue to work on future versions of Windows. Driver installers and uninstall modules should never check the OS version." />
+    <REQUIREMENT NUMBER="6" TITLE="User account control (UAC) test" RATIONALE="Most applications do not require administrator privileges at run time, and should be just fine running as a standard-user. Windows applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application." />
+    <REQUIREMENT NUMBER="7" TITLE="Adhere to system restart manager messages" RATIONALE="In a critical shutdown, applications that return FALSE to WM_QUERYENDSESSION will be sent WM_ENDSESSION and closed, while those that time out in response to WM_QUERYENDSESSION will be terminated." />
+    <REQUIREMENT NUMBER="8" TITLE="Safe mode test" RATIONALE="By default, most drivers and services that did not come preinstalled with Windows are not started in Safe Mode. They should remain disabled unless they are needed for basic operations of the system or for diagnostic and recovery purposes." />
+    <REQUIREMENT NUMBER="9" TITLE="Multiuser session test" RATIONALE="Windows users should be able to run concurrent sessions without conflict or disruption.  Applications must ensure that when running in multiple sessions either locally or remotely, the normal functionality of the application should not be impacted. Application settings and data files should not be persisted across users. A user’s privacy and preferences should be isolated to the user’s session." />
+    <REQUIREMENT NUMBER="10" TITLE="Crashes and hangs test" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
+      <TEST INDEX="47" NAME="App launch tests" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:29s.59ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:04s.88ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="11" TITLE="Compatibility and resiliency test" RATIONALE="When Windows detects that an application has operated in an incompatible manner, it applies a compatibility fix that causes the application to behave correctly, ensuring a positive user experience. Applications should not rely on this behavior since it is only provided to allow legacy applications to work correctly on Windows." />
+    <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.36ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Windows security best practices test" RATIONALE="An application should not change the default Windows security settings." />
+    <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.48ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:02s.16ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.89ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:02s.87ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Performance test" RATIONALE="The application should have a fast and responsive launch and suspend experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) to enable fast switching and multitasking between previously unopened applications.">
+      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:02s.12ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="60" NAME="Optimized binding references" DESCRIPTION="When using bindings, WinJS.Binding.optimizeBindingReferences should be set to true to optimize the memory usage." EXECUTIONTIME="00h:00m:02s.57ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="App manifest resources test" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
+      <TEST INDEX="45" NAME="App resources validation" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.68ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:03s.53ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:03s.02ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="File encoding test" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:02s.83ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="22" TITLE="Direct3D Feature Test" RATIONALE="App should use the Direct3D capability correctly.">
+      <TEST INDEX="51" NAME="Direct3D feature level support" DESCRIPTION="Applications must render content on Direct3D feature level 9.1 hardware." EXECUTIONTIME="00h:00m:09s.74ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="71" NAME="Direct3D Trim after Suspend" DESCRIPTION="Applications must call IDXGIDevice3::Trim() on the Direct3D devices they create when handling a Suspend notification." EXECUTIONTIME="00h:00m:00s.64ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.46ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute test" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:01s.56ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="57" NAME="Type location test" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.63ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="55" NAME="Type name case-sensitivity test" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.64ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="54" NAME="Type name correctness test" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.75ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="58" NAME="General metadata correctness test" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:01s.79ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="53" NAME="Properties test" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.74ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:02s.68ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:01s.28ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="26" TITLE="High-DPI support" RATIONALE="The application needs to set DPI-aware to make the UI look consistently good across a wide variety of high-DPI display settings." />
+    <REQUIREMENT NUMBER="27" TITLE="Resource Usage Test" RATIONALE="WinJS background tasks need to call close() to free resource.">
+      <TEST INDEX="68" NAME="WinJS background task test" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:02s.17ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="1895Romi.LearnAccounting" Type="Application" Source="AppxPackage" Publisher="CN=56DBEB3B-4F3D-43A9-BCB8-87034D19EA47" Version="1.1.0.0" Language="1033" OnSystemDrive="true" RootDirPath="C:\Program Files\WindowsApps\1895Romi.LearnAccounting_1.1.0.0_neutral__t7fpg15r42te8" PathEvidenceId="0xa" RNP="0x1" DNP="0xd" EvidenceId="0xa" Id="0000affc63ae8f31772a5bf714609f1debe000000904">
+        <Indicators>
+          <DirectoryIndicators>
+            <Directory Name="detail" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0x9" DNP="0xb" UniqueId="0x1c" Id="00005b2fea159845aa2c0a43fb9dd9c26a2d6abfa7ad" />
+            <Directory Name="js" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\js" RNP="0x9" DNP="0xb" UniqueId="0x2e" Id="0000ed830a2cad918e620bb3cae846c3985ea8ddae26" />
+            <Directory Name="1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8" RNP="0x9" DNP="0xb" UniqueId="0xb" Id="00009099d2a051bf4b720b2721a683720a3e868c913b" />
+            <Directory Name="html" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html" RNP="0x9" DNP="0xb" UniqueId="0x14" Id="0000d3e4c1f8626b92089a7c0d3e2755c6835f64c222" />
+            <Directory Name="www" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www" RNP="0x9" DNP="0xb" UniqueId="0x10" Id="00002a0dd572593b77616f32cfe15b70877daadb021b" />
+            <Directory Name="angular" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\angular" RNP="0x9" DNP="0xb" UniqueId="0x33" Id="0000c47d958161e11e9eaa25d74654ff65351f04b7b3" />
+            <Directory Name="onsen" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\onsen" RNP="0x9" DNP="0xb" UniqueId="0x37" Id="00000693bb83c3a1a3a3eea1452d745fded7229549b7" />
+            <Directory Name="js" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\onsen\js" RNP="0x9" DNP="0xb" UniqueId="0x3f" Id="0000ed830a2cad918e620bb3cae846c3985ea8ddae26" />
+            <Directory Name="lib" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib" RNP="0x9" DNP="0xb" UniqueId="0x32" Id="0000244ddb0987fcccfe1d1cd79097b320e2fc529cc4" />
+          </DirectoryIndicators>
+          <WindowsStoreAppManifestIndicators>
+            <PackageManifest PackageFullName="1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8">
+              <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+                <Identity Name="1895Romi.LearnAccounting" Publisher="CN=56DBEB3B-4F3D-43A9-BCB8-87034D19EA47" Version="1.1.0.0" ProcessorArchitecture="neutral" />
+                <Properties>
+                  <DisplayName>Learn Accounting</DisplayName>
+                  <PublisherDisplayName>Romiracle</PublisherDisplayName>
+                  <Logo>images\StoreLogo.png</Logo>
+                </Properties>
+                <Prerequisites>
+                  <OSMinVersion>6.3.0</OSMinVersion>
+                  <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+                </Prerequisites>
+                <Resources>
+                  <Resource Language="EN-US" />
+                </Resources>
+                <Applications>
+                  <Application Id="io.cordova.hellocordova" StartPage="www\index.html">
+                    <m2:VisualElements BackgroundColor="#464646" Description="CordovaApp" DisplayName="Learn Accounting" ForegroundText="light" Square150x150Logo="images\Square150x150Logo.png" Square30x30Logo="images\Square30x30Logo.png">
+                      <m2:DefaultTile Square310x310Logo="images\Square310x310Logo.png" Square70x70Logo="images\Square70x70Logo.png" Wide310x150Logo="images\Wide310x150Logo.png">
+                        <m2:ShowNameOnTiles>
+                          <m2:ShowOn Tile="square150x150Logo" />
+                          <m2:ShowOn Tile="wide310x150Logo" />
+                          <m2:ShowOn Tile="square310x310Logo" />
+                        </m2:ShowNameOnTiles>
+                      </m2:DefaultTile>
+                      <m2:SplashScreen Image="images\SplashScreen.png" />
+                    </m2:VisualElements>
+                  </Application>
+                </Applications>
+                <Capabilities>
+                  <Capability Name="internetClient" />
+                </Capabilities>
+                <Dependencies>
+                  <PackageDependency Name="Microsoft.WinJS.2.0" MinVersion="1.0.9600.17018" />
+                </Dependencies>
+              </Package>
+            </PackageManifest>
+          </WindowsStoreAppManifestIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="0000499d8255ca87312e39e029824541ff270474b146">
+            <File Name="onsenui_all.min.js" Id="000048f281af66502bb6da73bd85989414aa39339ee4" ShortName="ONSENU~3.JS" Size="0x7908f" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\onsen\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\onsen\js\onsenui_all.min.js" LongPathHash="000090a3232f92ec5d02ff69378401faeaf11641c2ba" UniqueId="0x43" />
+            <File Name="onsenui_all.js" Id="00002cd6ea678dda3be5a9ef75e2ee022bed3ce4845a" ShortName="ONSENU~2.JS" Size="0x189840" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\onsen\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\onsen\js\onsenui_all.js" LongPathHash="0000c28c91b81aa1b8d34846487d9bec82e196e5c433" UniqueId="0x42" />
+            <File Name="controllers.js" Id="00009c6035cf1ea774a3fabf30e0df9836aae5aa71fc" ShortName="CONTRO~1.JS" Size="0x4b3" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\js\controllers.js" LongPathHash="0000f08468a81fd32da5614a368d2a6333a458c4d022" UniqueId="0x30" />
+            <File Name="6.html" Id="000012edade65cb4f83e6c1e933e0d80af655926da11" ShortName="69BF0~1.HTM" Size="0x557" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\6.html" LongPathHash="0000cf582161e50c140f3564a3112a891c9f32250867" UniqueId="0x29" />
+            <File Name="13.html" Id="0000a7df64393f32f6c7c494e7c057ea3b2c48dc4e25" ShortName="13E1CF~1.HTM" Size="0xe58" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\13.html" LongPathHash="0000ebbae8d5d42726d73180e6deaaf1d5b7193de4c5" UniqueId="0x21" />
+            <File Name="3.html" Id="00009f7d1722b107ca3ab03cd3cc686b6648ae89203b" ShortName="3B185~1.HTM" Size="0x69c" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\3.html" LongPathHash="00006d02b537e2cdadccefcab4be59207d5aeb9e0695" UniqueId="0x25" />
+            <File Name="50.html" Id="0000c550dd8f1213ea49c8fbcd13b3ccf36cf6af5b8b" ShortName="5043E4~1.HTM" Size="0x685" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\50.html" LongPathHash="00004455b5c6dba2f5a27e94a9c341e76a841ea8a6e8" UniqueId="0x28" />
+            <File Name="1.html" Id="00001bab5a8954ac5736322746e8f4cbc0ef3df9af15" ShortName="1DAEC~1.HTM" Size="0x400" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\1.html" LongPathHash="0000c38165ecf1d1ea59f8d877e6cb1c76e29f699ac3" UniqueId="0x1d" />
+            <File Name="5.html" Id="0000c12b2772e01e33b985224bdf1ff13f5a3f3f2bbf" ShortName="596A8~1.HTM" Size="0x6ca" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\5.html" LongPathHash="00007f40d2baf65d9e2e45ed5245d2ce07ee51d42680" UniqueId="0x27" />
+            <File Name="12.html" Id="0000d5114808b9dce07fbe0a4aeaf645d4265af39346" ShortName="12B84B~1.HTM" Size="0x2091" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\12.html" LongPathHash="00000a839d95799922332ce18693e2e4367fa73a10c7" UniqueId="0x20" />
+            <File Name="app.js" Id="00002def0d1ba9dd871c528dbece70f7509dcd7fed75" Size="0xca1" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\js\app.js" LongPathHash="00003e4721d86dc6da788d941ba64b00c67c737fb697" UniqueId="0x2f" />
+            <File Name="platformOverrides.js" Id="00007ad25cd5f45a0f3bf79b9582096bb510ae981d8c" ShortName="PLATFO~1.JS" Size="0x5b" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\js\platformoverrides.js" LongPathHash="0000ec01d5c11d3cf42b76d200b0c7ce03e0c6664a2f" UniqueId="0x31" />
+            <File Name="angular-ui-router.min.js" Id="0000a4572fe4ed6fc19596fc2ecbde69b667b9d0e0f6" ShortName="ANGULA~2.JS" Size="0x76f0" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\angular" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\angular\angular-ui-router.min.js" LongPathHash="000047ed17a5d79f6c161ac91eac98fc469f7e84bbbb" UniqueId="0x34" />
+            <File Name="7.html" Id="0000e81b3317d1c64558f2e0edba4d6536b1470f7ceb" ShortName="77FA6~1.HTM" Size="0x84b" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\7.html" LongPathHash="0000f6961925f6e8d23ce1467648398e6bf786a39d39" UniqueId="0x2a" />
+            <File Name="14.html" Id="0000ce74535a0acdd82ca6cf18c2e3c843b2849df57c" ShortName="14425F~1.HTM" Size="0x1719" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\14.html" LongPathHash="0000c6df5d38425e6d8bda5bee3db3590c90ec7f196b" UniqueId="0x22" />
+            <File Name="angular.js" Id="0000e647fcc05919c586daaee557baaf2964e26cae3e" Size="0xe2060" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\angular" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\angular\angular.js" LongPathHash="0000d69900b4ad887932b8d405f495fe7c2b48b3908a" UniqueId="0x35" />
+            <File Name="angular.min.js" Id="000090cfc806e63a1bb5f3eb28e87cbaee779a9808c8" ShortName="ANGULA~1.JS" Size="0x1e142" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\angular" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\angular\angular.min.js" LongPathHash="0000a8e3726ffe29c1902ddded610e495f7d18967d7a" UniqueId="0x36" />
+            <File Name="onsenui.js" Id="00009ee69eba50302961e56bccffb5edcbc70be1140b" Size="0xa77e2" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\onsen\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\onsen\js\onsenui.js" LongPathHash="00006dbd4b692465188f10045fb6dbb6304cc45585fe" UniqueId="0x40" />
+            <File Name="onsenui.min.js" Id="0000becd4bca7dd235dec6e78da3bbca76d1ffef7991" ShortName="ONSENU~1.JS" Size="0x40db9" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\onsen\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\lib\onsen\js\onsenui.min.js" LongPathHash="00000c5960848352ddc362dc90142b8edac55c26dcbe" UniqueId="0x41" />
+            <File Name="2.html" Id="000061a3ca6170c9b01beb94bd60a56c433cefb34647" ShortName="25922~1.HTM" Size="0xa7e" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\2.html" LongPathHash="0000793490fb2f48dadffbe8d3cbad7376d7e15cf349" UniqueId="0x23" />
+            <File Name="11.html" Id="00006ce1925a6e9929a8f989d3e89874330adf932d73" ShortName="117BC3~1.HTM" Size="0x1cd4" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\11.html" LongPathHash="00002c872a9894d4d2e0495e0793e86442088c77fb15" UniqueId="0x1f" />
+            <File Name="20.html" Id="00009a5590caf4be244e0ce868961af9716b13a52b4c" ShortName="20376E~1.HTM" Size="0x2de" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\20.html" LongPathHash="0000f1d8beb1f726b0153420aecd89da42679a9c8f1a" UniqueId="0x24" />
+            <File Name="4.html" Id="0000a9e389a36ca01800a900b3bee5c494603d07b0cc" ShortName="49D66~1.HTM" Size="0x3bc" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\4.html" LongPathHash="0000b32299d46f858cd500083be6d7a0a6958299dfa0" UniqueId="0x26" />
+            <File Name="8.html" Id="0000ecbfbb023dbf73e4ccfb6398fc37d50d206d7e6f" ShortName="8B468~1.HTM" Size="0x34b" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\8.html" LongPathHash="0000075e9ae704497abdf04b3b9e7af8a16e1a1703f9" UniqueId="0x2b" />
+            <File Name="10.html" Id="000005742b98462f3c780f5e9707ec53a1e622eda2e4" ShortName="109FD3~1.HTM" Size="0xa36" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\10.html" LongPathHash="0000363baa66d825c847777570b1fe522041fe1f4c69" UniqueId="0x1e" />
+            <File Name="9.html" Id="00002ea24060f3690fad8c285b1db1150e11ab53d837" ShortName="968DA~1.HTM" Size="0x8ec" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail\9.html" LongPathHash="00008acfd570379747ae7c9c530ab7060d59fcf88bb1" UniqueId="0x2c" />
+            <File Name="detail.html" Id="0000e116b5adec67585a17f7b6666485db2814f02bfd" ShortName="DETAIL~1.HTM" Size="0x554" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\detail.html" LongPathHash="0000e86aee1e0eb42e3ab004e3be5fac975217f7b627" UniqueId="0x15" />
+            <File Name="index.html" Id="0000b5d2323113eae75f5bfc36bfc48c20dda6dd4058" ShortName="INDEX~1.HTM" Size="0x79e" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\index.html" LongPathHash="0000d44f9e4a70a7892179ab65b380071409cc10bb74" UniqueId="0x13" />
+            <File Name="main.html" Id="000073f3f653690ec052053e78941709803e121b02a9" ShortName="MAIN~1.HTM" Size="0x4c5" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\main.html" LongPathHash="0000f73df16016333e6b4264721186c2adaa96c76986" UniqueId="0x17" />
+            <File Name="cordova.js" Id="00006506543e7fd0f9a37973e288e4e85f8b2b20885b" Size="0xd15c" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\cordova.js" LongPathHash="0000d0fedb0f9f7a6910790a71525371609d8e9fc08c" UniqueId="0x11" />
+            <File Name="cordova_plugins.js" Id="00001ec951bd5299a500465cdc64420d8e10907a1540" ShortName="CORDOV~1.JS" Size="0xd6" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\cordova_plugins.js" LongPathHash="00009ff58dbc942951bbc40baf3a531a3f0b3e9518a4" UniqueId="0x12" />
+            <File Name="home.html" Id="000052a322a2d6ae0db5b0e47939136b98e4c111be87" ShortName="HOME~1.HTM" Size="0x5e3" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\home.html" LongPathHash="0000d6680ccbf9cb2d9512d55d432212a6097b347229" UniqueId="0x16" />
+            <File Name="menu.html" Id="00006d5114d64725e857d7194f6b17739b6387325a83" ShortName="MENU~1.HTM" Size="0x3c2" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\menu.html" LongPathHash="0000e3bfa18a093957927070e9670fe7c42ba92ba9d8" UniqueId="0x19" />
+            <File Name="resources.pri" Id="0000c748558b1638810b8e36bd4ac1555d1f75b1ab34" ShortName="RESOUR~1.PRI" Size="0x3db0" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\resources.pri" LongPathHash="000027a74e37212d59c71a4a2a5d0b18a930a92ebc42" UniqueId="0xc" />
+            <File Name="page1.html" Id="00000b604e2811cddc9bf5c76d19ed188fed0fab60df" ShortName="PAGE1~1.HTM" Size="0x2ee" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\page1.html" LongPathHash="0000bf92f5c85d8ce732e6b4e825ab6e08bf22697886" UniqueId="0x1a" />
+            <File Name="page2.html" Id="0000bf0c2bb2b6005f234f641370516a06c4135f1d3a" ShortName="PAGE2~1.HTM" Size="0x2ee" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\page2.html" LongPathHash="0000244a882025d5f405ab34ca6568ff8a438bc987b6" UniqueId="0x1b" />
+            <File Name="master.html" Id="00005614757b8ae70ef1057fba9968fc9e331c3fdbd3" ShortName="MASTER~1.HTM" Size="0x273" BinaryType="UNKNOWN" Created="07/17/2015 12:35:14" Modified="07/17/2015 12:35:14" Path="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\1895romi.learnaccounting_1.1.0.0_neutral__t7fpg15r42te8\www\html\master.html" LongPathHash="000011d4dd263860acb337de311a67f40981be5a408e" UniqueId="0x18" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="0000affc63ae8f31772a5bf714609f1debe000000904" AnalysisVersion="1.60" DictionaryVersion="2.16" Type="Package" Id="1895Romi.LearnAccounting_1.1.0.0_neutral__t7fpg15r42te8">
+      <AitFile ErrorCode="0" Name="10.html" Id="000005742b98462f3c780f5e9707ec53a1e622eda2e4" />
+      <AitFile ErrorCode="0" Name="page1.html" Id="00000b604e2811cddc9bf5c76d19ed188fed0fab60df" />
+      <AitFile ErrorCode="0" Name="6.html" Id="000012edade65cb4f83e6c1e933e0d80af655926da11" />
+      <AitFile ErrorCode="0" Name="1.html" Id="00001bab5a8954ac5736322746e8f4cbc0ef3df9af15" />
+      <AitFile ErrorCode="0" Name="cordova_plugins.js" Id="00001ec951bd5299a500465cdc64420d8e10907a1540" />
+      <AitFile ErrorCode="0" Name="onsenui_all.js" Id="00002cd6ea678dda3be5a9ef75e2ee022bed3ce4845a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="MSApp.execUnsafeLocalFunction" />
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.activeElement.blur" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.adoptNode" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.style" />
+          <AitFeature Name="document.body.style.webkitAnimation" />
+          <AitFeature Name="document.body.style.webkitTransition" />
+          <AitFeature Name="document.createComment" />
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createElementNS" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.dispatchEvent" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.scrollWidth" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.elementFromPoint" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.getElementsByName" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.implementation.createHTMLDocument" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="location.href.replace" />
+          <AitFeature Name="location.replace" />
+          <AitFeature Name="navigator._createPageScope" />
+          <AitFeature Name="navigator._events" />
+          <AitFeature Name="navigator._pushPageDOM" />
+          <AitFeature Name="navigator.app.exitApp" />
+          <AitFeature Name="navigator.msPointerEnabled" />
+          <AitFeature Name="navigator.pages.length" />
+          <AitFeature Name="navigator.pointerEnabled" />
+          <AitFeature Name="navigator.pushPage" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="navigator.userAgent.indexOf" />
+          <AitFeature Name="navigator.userAgent.match" />
+          <AitFeature Name="window.FastClick" />
+          <AitFeature Name="window.HTMLElement" />
+          <AitFeature Name="window.Modernizr" />
+          <AitFeature Name="window.PointerEvent" />
+          <AitFeature Name="window.WinJS._execUnsafe" />
+          <AitFeature Name="window.XMLHttpRequest" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.angular.bootstrap" />
+          <AitFeature Name="window.angular.callbacks" />
+          <AitFeature Name="window.angular.element" />
+          <AitFeature Name="window.cancelAnimationFrame" />
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.clearTimeout" />
+          <AitFeature Name="window.document.addEventListener" />
+          <AitFeature Name="window.document.body" />
+          <AitFeature Name="window.document.createElement" />
+          <AitFeature Name="window.document.querySelectorAll" />
+          <AitFeature Name="window.document.removeEventListener" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.getSelection" />
+          <AitFeature Name="window.history.pushState" />
+          <AitFeature Name="window.history.state" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.location.href" />
+          <AitFeature Name="window.location.reload" />
+          <AitFeature Name="window.matchMedia" />
+          <AitFeature Name="window.mozCancelAnimationFrame" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.msRequestAnimationFrame" />
+          <AitFeature Name="window.name.replace" />
+          <AitFeature Name="window.navigator" />
+          <AitFeature Name="window.navigator.appVersion" />
+          <AitFeature Name="window.navigator.userAgent" />
+          <AitFeature Name="window.navigator.userAgent.indexOf" />
+          <AitFeature Name="window.navigator.userAgent.match" />
+          <AitFeature Name="window.navigator.userAgent.substr" />
+          <AitFeature Name="window.oRequestAnimationFrame" />
+          <AitFeature Name="window.ons.isWebView" />
+          <AitFeature Name="window.ons.notification" />
+          <AitFeature Name="window.ons.orientation" />
+          <AitFeature Name="window.ons.platform" />
+          <AitFeature Name="window.ontouchstart" />
+          <AitFeature Name="window.orientation" />
+          <AitFeature Name="window.outerWidth" />
+          <AitFeature Name="window.pageXOffset" />
+          <AitFeature Name="window.pageYOffset" />
+          <AitFeature Name="window.postMessage" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setInterval" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.webkitCancelAnimationFrame" />
+          <AitFeature Name="window.webkitCancelRequestAnimationFrame" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="app.js" Id="00002def0d1ba9dd871c528dbece70f7509dcd7fed75">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.home.detail" />
+          <AitFeature Name="navigator.master" />
+          <AitFeature Name="navigator.master.detail" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="9.html" Id="00002ea24060f3690fad8c285b1db1150e11ab53d837" />
+      <AitFile ErrorCode="0" Name="onsenui_all.min.js" Id="000048f281af66502bb6da73bd85989414aa39339ee4">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="MSApp.execUnsafeLocalFunction" />
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.activeElement.blur" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.adoptNode" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.style" />
+          <AitFeature Name="document.body.style.webkitAnimation" />
+          <AitFeature Name="document.body.style.webkitTransition" />
+          <AitFeature Name="document.createComment" />
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createElementNS" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.dispatchEvent" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.scrollWidth" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.elementFromPoint" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.getElementsByName" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.implementation.createHTMLDocument" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="location.href.replace" />
+          <AitFeature Name="location.replace" />
+          <AitFeature Name="navigator._createPageScope" />
+          <AitFeature Name="navigator._events" />
+          <AitFeature Name="navigator._pushPageDOM" />
+          <AitFeature Name="navigator.app.exitApp" />
+          <AitFeature Name="navigator.msPointerEnabled" />
+          <AitFeature Name="navigator.pages.length" />
+          <AitFeature Name="navigator.pointerEnabled" />
+          <AitFeature Name="navigator.pushPage" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="navigator.userAgent.indexOf" />
+          <AitFeature Name="navigator.userAgent.match" />
+          <AitFeature Name="window.FastClick" />
+          <AitFeature Name="window.HTMLElement" />
+          <AitFeature Name="window.Modernizr" />
+          <AitFeature Name="window.PointerEvent" />
+          <AitFeature Name="window.WinJS._execUnsafe" />
+          <AitFeature Name="window.XMLHttpRequest" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.angular.bootstrap" />
+          <AitFeature Name="window.angular.callbacks" />
+          <AitFeature Name="window.angular.element" />
+          <AitFeature Name="window.cancelAnimationFrame" />
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.clearTimeout" />
+          <AitFeature Name="window.document.addEventListener" />
+          <AitFeature Name="window.document.body" />
+          <AitFeature Name="window.document.createElement" />
+          <AitFeature Name="window.document.querySelectorAll" />
+          <AitFeature Name="window.document.removeEventListener" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.getSelection" />
+          <AitFeature Name="window.history.pushState" />
+          <AitFeature Name="window.history.state" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.location.href" />
+          <AitFeature Name="window.location.reload" />
+          <AitFeature Name="window.matchMedia" />
+          <AitFeature Name="window.mozCancelAnimationFrame" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.msRequestAnimationFrame" />
+          <AitFeature Name="window.name.replace" />
+          <AitFeature Name="window.navigator" />
+          <AitFeature Name="window.navigator.appVersion" />
+          <AitFeature Name="window.navigator.userAgent" />
+          <AitFeature Name="window.navigator.userAgent.indexOf" />
+          <AitFeature Name="window.navigator.userAgent.match" />
+          <AitFeature Name="window.navigator.userAgent.substr" />
+          <AitFeature Name="window.oRequestAnimationFrame" />
+          <AitFeature Name="window.ons.isWebView" />
+          <AitFeature Name="window.ons.notification" />
+          <AitFeature Name="window.ons.orientation" />
+          <AitFeature Name="window.ons.platform" />
+          <AitFeature Name="window.ontouchstart" />
+          <AitFeature Name="window.orientation" />
+          <AitFeature Name="window.outerWidth" />
+          <AitFeature Name="window.pageXOffset" />
+          <AitFeature Name="window.pageYOffset" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setInterval" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.webkitCancelAnimationFrame" />
+          <AitFeature Name="window.webkitCancelRequestAnimationFrame" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="home.html" Id="000052a322a2d6ae0db5b0e47939136b98e4c111be87">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.home.detail" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="master.html" Id="00005614757b8ae70ef1057fba9968fc9e331c3fdbd3">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.master.detail" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="2.html" Id="000061a3ca6170c9b01beb94bd60a56c433cefb34647" />
+      <AitFile ErrorCode="0" Name="cordova.js" Id="00006506543e7fd0f9a37973e288e4e85f8b2b20885b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="Windows.UI.WebUI.WebUIApplication.addEventListener" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.dispatchEvent" />
+          <AitFeature Name="document.getElementsByTagName" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="document.removeEventListener" />
+          <AitFeature Name="navigator.appVersion.indexOf" />
+          <AitFeature Name="window._nativeReady" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.console.warn" />
+          <AitFeature Name="window.dispatchEvent" />
+          <AitFeature Name="window.navigator" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.setTimeout" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="11.html" Id="00006ce1925a6e9929a8f989d3e89874330adf932d73" />
+      <AitFile ErrorCode="0" Name="menu.html" Id="00006d5114d64725e857d7194f6b17739b6387325a83" />
+      <AitFile ErrorCode="0" Name="main.html" Id="000073f3f653690ec052053e78941709803e121b02a9">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.master" />
+          <AitFeature Name="navigator.master.detail" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="platformOverrides.js" Id="00007ad25cd5f45a0f3bf79b9582096bb510ae981d8c" />
+      <AitFile ErrorCode="0" Name="angular.min.js" Id="000090cfc806e63a1bb5f3eb28e87cbaee779a9808c8">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.angular.element" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="20.html" Id="00009a5590caf4be244e0ce868961af9716b13a52b4c" />
+      <AitFile ErrorCode="0" Name="controllers.js" Id="00009c6035cf1ea774a3fabf30e0df9836aae5aa71fc" />
+      <AitFile ErrorCode="0" Name="onsenui.js" Id="00009ee69eba50302961e56bccffb5edcbc70be1140b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="MSApp.execUnsafeLocalFunction" />
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.activeElement.blur" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.adoptNode" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createElementNS" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.dispatchEvent" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.scrollWidth" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.elementFromPoint" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.implementation.createHTMLDocument" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="navigator._createPageScope" />
+          <AitFeature Name="navigator._events" />
+          <AitFeature Name="navigator._pushPageDOM" />
+          <AitFeature Name="navigator.app.exitApp" />
+          <AitFeature Name="navigator.msPointerEnabled" />
+          <AitFeature Name="navigator.pages.length" />
+          <AitFeature Name="navigator.pointerEnabled" />
+          <AitFeature Name="navigator.pushPage" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="navigator.userAgent.indexOf" />
+          <AitFeature Name="navigator.userAgent.match" />
+          <AitFeature Name="window.FastClick" />
+          <AitFeature Name="window.HTMLElement" />
+          <AitFeature Name="window.Modernizr" />
+          <AitFeature Name="window.PointerEvent" />
+          <AitFeature Name="window.WinJS._execUnsafe" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.document.addEventListener" />
+          <AitFeature Name="window.document.body" />
+          <AitFeature Name="window.document.createElement" />
+          <AitFeature Name="window.document.querySelectorAll" />
+          <AitFeature Name="window.document.removeEventListener" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.getSelection" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.matchMedia" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.msRequestAnimationFrame" />
+          <AitFeature Name="window.navigator.appVersion" />
+          <AitFeature Name="window.navigator.userAgent" />
+          <AitFeature Name="window.navigator.userAgent.indexOf" />
+          <AitFeature Name="window.navigator.userAgent.match" />
+          <AitFeature Name="window.navigator.userAgent.substr" />
+          <AitFeature Name="window.oRequestAnimationFrame" />
+          <AitFeature Name="window.ons.isWebView" />
+          <AitFeature Name="window.ons.notification" />
+          <AitFeature Name="window.ons.orientation" />
+          <AitFeature Name="window.ons.platform" />
+          <AitFeature Name="window.ontouchstart" />
+          <AitFeature Name="window.orientation" />
+          <AitFeature Name="window.outerWidth" />
+          <AitFeature Name="window.pageXOffset" />
+          <AitFeature Name="window.pageYOffset" />
+          <AitFeature Name="window.postMessage" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="3.html" Id="00009f7d1722b107ca3ab03cd3cc686b6648ae89203b" />
+      <AitFile ErrorCode="0" Name="angular-ui-router.min.js" Id="0000a4572fe4ed6fc19596fc2ecbde69b667b9d0e0f6" />
+      <AitFile ErrorCode="0" Name="13.html" Id="0000a7df64393f32f6c7c494e7c057ea3b2c48dc4e25" />
+      <AitFile ErrorCode="0" Name="4.html" Id="0000a9e389a36ca01800a900b3bee5c494603d07b0cc" />
+      <AitFile ErrorCode="0" Name="index.html" Id="0000b5d2323113eae75f5bfc36bfc48c20dda6dd4058">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.master" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="onsenui.min.js" Id="0000becd4bca7dd235dec6e78da3bbca76d1ffef7991">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="MSApp.execUnsafeLocalFunction" />
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.activeElement.blur" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.adoptNode" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createElementNS" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.dispatchEvent" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.scrollWidth" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.elementFromPoint" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.implementation.createHTMLDocument" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="navigator._createPageScope" />
+          <AitFeature Name="navigator._events" />
+          <AitFeature Name="navigator._pushPageDOM" />
+          <AitFeature Name="navigator.app.exitApp" />
+          <AitFeature Name="navigator.msPointerEnabled" />
+          <AitFeature Name="navigator.pages.length" />
+          <AitFeature Name="navigator.pointerEnabled" />
+          <AitFeature Name="navigator.pushPage" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="navigator.userAgent.indexOf" />
+          <AitFeature Name="navigator.userAgent.match" />
+          <AitFeature Name="window.FastClick" />
+          <AitFeature Name="window.HTMLElement" />
+          <AitFeature Name="window.Modernizr" />
+          <AitFeature Name="window.PointerEvent" />
+          <AitFeature Name="window.WinJS._execUnsafe" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.document.addEventListener" />
+          <AitFeature Name="window.document.body" />
+          <AitFeature Name="window.document.createElement" />
+          <AitFeature Name="window.document.querySelectorAll" />
+          <AitFeature Name="window.document.removeEventListener" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.getSelection" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.matchMedia" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.msRequestAnimationFrame" />
+          <AitFeature Name="window.navigator.appVersion" />
+          <AitFeature Name="window.navigator.userAgent" />
+          <AitFeature Name="window.navigator.userAgent.indexOf" />
+          <AitFeature Name="window.navigator.userAgent.match" />
+          <AitFeature Name="window.navigator.userAgent.substr" />
+          <AitFeature Name="window.oRequestAnimationFrame" />
+          <AitFeature Name="window.ons.isWebView" />
+          <AitFeature Name="window.ons.notification" />
+          <AitFeature Name="window.ons.orientation" />
+          <AitFeature Name="window.ons.platform" />
+          <AitFeature Name="window.ontouchstart" />
+          <AitFeature Name="window.orientation" />
+          <AitFeature Name="window.outerWidth" />
+          <AitFeature Name="window.pageXOffset" />
+          <AitFeature Name="window.pageYOffset" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="page2.html" Id="0000bf0c2bb2b6005f234f641370516a06c4135f1d3a" />
+      <AitFile ErrorCode="0" Name="5.html" Id="0000c12b2772e01e33b985224bdf1ff13f5a3f3f2bbf" />
+      <AitFile ErrorCode="0" Name="50.html" Id="0000c550dd8f1213ea49c8fbcd13b3ccf36cf6af5b8b" />
+      <AitFile ErrorCode="0" Name="14.html" Id="0000ce74535a0acdd82ca6cf18c2e3c843b2849df57c" />
+      <AitFile ErrorCode="0" Name="12.html" Id="0000d5114808b9dce07fbe0a4aeaf645d4265af39346" />
+      <AitFile ErrorCode="0" Name="detail.html" Id="0000e116b5adec67585a17f7b6666485db2814f02bfd" />
+      <AitFile ErrorCode="0" Name="angular.js" Id="0000e647fcc05919c586daaee557baaf2964e26cae3e">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.body.style" />
+          <AitFeature Name="document.body.style.webkitAnimation" />
+          <AitFeature Name="document.body.style.webkitTransition" />
+          <AitFeature Name="document.createComment" />
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.getElementsByName" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="location.href.replace" />
+          <AitFeature Name="location.replace" />
+          <AitFeature Name="window.XMLHttpRequest" />
+          <AitFeature Name="window.angular.bootstrap" />
+          <AitFeature Name="window.angular.callbacks" />
+          <AitFeature Name="window.angular.element" />
+          <AitFeature Name="window.cancelAnimationFrame" />
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.clearTimeout" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.history.pushState" />
+          <AitFeature Name="window.history.state" />
+          <AitFeature Name="window.location.href" />
+          <AitFeature Name="window.location.reload" />
+          <AitFeature Name="window.mozCancelAnimationFrame" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.name.replace" />
+          <AitFeature Name="window.navigator" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setInterval" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.webkitCancelAnimationFrame" />
+          <AitFeature Name="window.webkitCancelRequestAnimationFrame" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="7.html" Id="0000e81b3317d1c64558f2e0edba4d6536b1470f7ceb" />
+      <AitFile ErrorCode="0" Name="8.html" Id="0000ecbfbb023dbf73e4ccfb6398fc37d50d206d7e6f" />
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

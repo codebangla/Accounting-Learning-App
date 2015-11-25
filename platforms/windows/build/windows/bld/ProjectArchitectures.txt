@@ -1,0 +1,1 @@
+F:\Cordova\play\onsenui\accapp\platforms\windows\CordovaApp.Windows.jsproj;neutral

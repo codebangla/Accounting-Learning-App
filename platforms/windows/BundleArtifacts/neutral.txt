@@ -1,0 +1,2 @@
+MainPackage=F:\Cordova\play\onsenui\accapp\platforms\windows\build\phone\Release\AnyCPU\CordovaApp.Phone_1.1.2.2_Bundle\CordovaApp.Phone_1.1.2.2_AnyCPU.appx
+ResourcePack=F:\Cordova\play\onsenui\accapp\platforms\windows\build\phone\Release\AnyCPU\CordovaApp.Phone_1.1.2.2_Bundle\CordovaApp.Phone_1.1.2.2_scale-100.appx

@@ -1,0 +1,161 @@
+<ons-page>
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button class="toolbar-button--quiet" ui-sref="^">
+                <ons-icon class="ion-ios-arrow-back ons-back-button__icon"></ons-icon>
+
+            </ons-toolbar-button>
+        </div>
+
+        <div class="center">Preparing Financial Statements</div>
+    </ons-toolbar>
+
+
+    <ons-row>
+
+        <ons-col>
+            <header>
+                <span class="item-title">{{item.title}}</span>
+                <span class="item-label">{{item.label}}</span>
+            </header>
+            <p class="page-item">
+                <b>Income Statement</b>
+                <table class="data-table">
+                    <tr>
+                        <th>Sum</th>
+                        <th>Account</th>
+                        <th>Amount ($)</th>
+                    </tr>
+
+                    <tr>
+                        <td class="border-bottom"></td>
+                        <td class="border-bottom">Service Revenue</td>
+                        <td class="border-bottom">10,000</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom">Total Revenues</td>
+                        <td class="border-bottom"></td>
+                        <td class="border-bottom">10,000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>Salaries and Wages Expense</td>
+                        <td>4,000</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom"></td>
+                        <td class="border-bottom">Rent Expenses</td>
+                        <td class="border-bottom">9000</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom">Total Expenses</td>
+                        <td class="border-bottom"></td>
+                        <td class="border-bottom">4,900</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom">Net income</td>
+                        <td class="border-bottom">10,000-4,900</td>
+                        <td class="border-bottom">5,100</td>
+                    </tr>
+                </table>
+
+            </p>
+            <p class="page-item">
+                <b> Balance Sheet </b>
+                <table>
+                    <tr>
+                        <th>Sum</th>
+                        <th>Account</th>
+                        <th>Amount ($)</th>
+                    </tr>
+
+                    <tr>
+                        <td class="border-bottom"></td>
+                        <td class="border-bottom">Cash</td>
+                        <td class="border-bottom">15,200</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom"></td>
+                        <td class="border-bottom">Supplies</td>
+                        <td class="border-bottom">2,500</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>Prepaid Insurance</td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom"></td>
+                        <td class="border-bottom">Equipments</td>
+                        <td class="border-bottom">5,000</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom">Total Assets</td>
+                        <td class="border-bottom"></td>
+                        <td class="border-bottom"><b>23,300</b></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Notes Payable</td>
+                        <td>5,000</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Accounts Payable</td>
+                        <td>2,500</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom"></td>
+                        <td class="border-bottom">Unearned Service Revenue</td>
+                        <td class="border-bottom">1,200</td>
+                    </tr>
+            <tr>
+                <td class="border-bottom">Total Liabilites</td>
+                <td class="border-bottom"></td>
+                <td class="border-bottom">8,700</td>
+            </tr>
+                    <tr>
+                        <td>Owner&rsquo;s Capital&nbsp;</td>
+                        <td></td>
+                        <td>10,000</td>
+                    </tr>
+                    <tr>
+                        <td>Net income&nbsp;</td>
+                        <td>(From Income Statements)</td>
+                        <td>5,100</td>
+                    </tr>
+                    <tr>
+                        <td>Owner&rsquo;s Drawings&nbsp;</td>
+                        <td></td>
+                        <td>500</td>
+                    </tr>
+            <tr>
+                <td class="border-bottom">Total O. E</td>
+                <td class="border-bottom"></td>
+                <td class="border-bottom">14,600</td>
+            </tr>
+                    <tr>
+                        <td class="border-bottom">Total Liabilites & O.E </td>
+                        <td class="border-bottom">8,700+14,600</td>
+                        <td class="border-bottom"><b>23,300</b></td>
+                    </tr>
+                </table>
+
+
+            </p>
+
+        </ons-col>
+    </ons-row>
+
+
+    <br>
+
+</ons-page>

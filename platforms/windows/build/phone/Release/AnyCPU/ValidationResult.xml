@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\wp-results.xsl'?>
+<REPORT OVERALL_RESULT="PASS" VERSION="3.3" LATEST_VERSION="FALSE" UPDATE_DOWNLOAD_URL="http://go.microsoft.com/fwlink/?LinkID=246599&amp;amp;clcid=0x409" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsPhone" PUBLISHER_DISPLAY_NAME="Romiracle" APP_NAME="1895Romi.LearnAccounting" APP_VERSION="1.1.0.1" OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="UI" ReportGenerationTime="17-Jul-15 6:23:21 PM" ID="b21b254dbfaf4dce92f67a6fc891ccb3">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Clean reversible install test" RATIONALE="A clean, reversible, installation allows users to successfully manage (deploy, and remove) applications on their system." />
+    <REQUIREMENT NUMBER="2" TITLE="Install to the correct folders test" RATIONALE="Windows provides specific locations in the file system to store programs and software components, shared application data, and application data specific to a user." />
+    <REQUIREMENT NUMBER="3" TITLE="Digitally signed file test" RATIONALE="An Authenticode digital signature allows users to be sure that the software is genuine. It also allows detection if a file has been tampered with e.g. infected by a virus." />
+    <REQUIREMENT NUMBER="4" TITLE="Support x64 Windows test" RATIONALE="To maintain compatibility with 64-bit versions of Windows, it is necessary that applications should natively support 64-bit or at minimum 32-bit Windows based applications to run seamlessly on 64-bit." />
+    <REQUIREMENT NUMBER="5" TITLE="OS version checking test" RATIONALE="Applications must not perform version checks for equality (== 5.1). If you need a specific feature, check whether the feature is available. If you need Windows XP, check for Windows XP or later (&gt;= 5.1), This way, your detection code will continue to work on future versions of Windows. Driver installers and uninstall modules should never check the OS version." />
+    <REQUIREMENT NUMBER="6" TITLE="User account control (UAC) test" RATIONALE="Most applications do not require administrator privileges at run time, and should be just fine running as a standard-user. Windows applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application." />
+    <REQUIREMENT NUMBER="7" TITLE="Adhere to system restart manager messages" RATIONALE="In a critical shutdown, applications that return FALSE to WM_QUERYENDSESSION will be sent WM_ENDSESSION and closed, while those that time out in response to WM_QUERYENDSESSION will be terminated." />
+    <REQUIREMENT NUMBER="8" TITLE="Safe mode test" RATIONALE="By default, most drivers and services that did not come preinstalled with Windows are not started in Safe Mode. They should remain disabled unless they are needed for basic operations of the system or for diagnostic and recovery purposes." />
+    <REQUIREMENT NUMBER="9" TITLE="Multiuser session test" RATIONALE="Windows users should be able to run concurrent sessions without conflict or disruption.  Applications must ensure that when running in multiple sessions either locally or remotely, the normal functionality of the application should not be impacted. Application settings and data files should not be persisted across users. A user’s privacy and preferences should be isolated to the user’s session." />
+    <REQUIREMENT NUMBER="10" TITLE="Crashes and hangs test" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience." />
+    <REQUIREMENT NUMBER="11" TITLE="Compatibility and resiliency test" RATIONALE="When Windows detects that an application has operated in an incompatible manner, it applies a compatibility fix that causes the application to behave correctly, ensuring a positive user experience. Applications should not rely on this behavior since it is only provided to allow legacy applications to work correctly on Windows." />
+    <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
+      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.39ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:05s.65ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="74" NAME="Bundle manifest" DESCRIPTION="Bundle manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.22ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="75" NAME="Package size" DESCRIPTION="Package file size should not be greater than 4 gigabytes." EXECUTIONTIME="00h:00m:02s.14ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Windows security best practices test" RATIONALE="An application should not change the default Windows security settings." />
+    <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:03s.96ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.97ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.80ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
+      <TEST INDEX="72" NAME="Supported APIs" DESCRIPTION="Windows Phone App must only use supported platform APIs." EXECUTIONTIME="00h:00m:05s.30ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Performance test" RATIONALE="The application should have a fast and responsive launch and suspend experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) to enable fast switching and multitasking between previously unopened applications." />
+    <REQUIREMENT NUMBER="19" TITLE="App manifest resources test" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
+      <TEST INDEX="45" NAME="App resources validation" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.92ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:04s.10ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.63ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="File encoding test" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:02s.65ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="22" TITLE="Direct3D Feature Test" RATIONALE="App should use the Direct3D capability correctly." />
+    <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.42ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute test" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:01s.44ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="57" NAME="Type location test" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.72ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="55" NAME="Type name case-sensitivity test" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.76ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="54" NAME="Type name correctness test" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.74ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="58" NAME="General metadata correctness test" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:01s.73ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="53" NAME="Properties test" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.72ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:02s.77ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="26" TITLE="High-DPI support" RATIONALE="The application needs to set DPI-aware to make the UI look consistently good across a wide variety of high-DPI display settings." />
+    <REQUIREMENT NUMBER="27" TITLE="Resource Usage Test" RATIONALE="WinJS background tasks need to call close() to free resource.">
+      <TEST INDEX="68" NAME="WinJS background task test" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:02s.84ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS />
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis Type="Template">
+      <AitFile ErrorCode="0" Name="cordova.js" Id="00006506543e7fd0f9a37973e288e4e85f8b2b20885b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="Windows.UI.WebUI.WebUIApplication.addEventListener" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.dispatchEvent" />
+          <AitFeature Name="document.getElementsByTagName" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="document.removeEventListener" />
+          <AitFeature Name="navigator.appVersion.indexOf" />
+          <AitFeature Name="window._nativeReady" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.console.warn" />
+          <AitFeature Name="window.dispatchEvent" />
+          <AitFeature Name="window.navigator" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.setTimeout" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="index.html" Id="0000b5d2323113eae75f5bfc36bfc48c20dda6dd4058">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.master" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="home.html" Id="000052a322a2d6ae0db5b0e47939136b98e4c111be87">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.home.detail" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="main.html" Id="000073f3f653690ec052053e78941709803e121b02a9">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.master" />
+          <AitFeature Name="navigator.master.detail" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="master.html" Id="00005614757b8ae70ef1057fba9968fc9e331c3fdbd3">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.master.detail" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="app.js" Id="00002def0d1ba9dd871c528dbece70f7509dcd7fed75">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.home.detail" />
+          <AitFeature Name="navigator.master" />
+          <AitFeature Name="navigator.master.detail" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="angular.js" Id="0000e647fcc05919c586daaee557baaf2964e26cae3e">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.body.style" />
+          <AitFeature Name="document.body.style.webkitAnimation" />
+          <AitFeature Name="document.body.style.webkitTransition" />
+          <AitFeature Name="document.createComment" />
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.getElementsByName" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="location.href.replace" />
+          <AitFeature Name="location.replace" />
+          <AitFeature Name="window.XMLHttpRequest" />
+          <AitFeature Name="window.angular.bootstrap" />
+          <AitFeature Name="window.angular.callbacks" />
+          <AitFeature Name="window.angular.element" />
+          <AitFeature Name="window.cancelAnimationFrame" />
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.clearTimeout" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.history.pushState" />
+          <AitFeature Name="window.history.state" />
+          <AitFeature Name="window.location.href" />
+          <AitFeature Name="window.location.reload" />
+          <AitFeature Name="window.mozCancelAnimationFrame" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.name.replace" />
+          <AitFeature Name="window.navigator" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setInterval" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.webkitCancelAnimationFrame" />
+          <AitFeature Name="window.webkitCancelRequestAnimationFrame" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="angular.min.js" Id="000090cfc806e63a1bb5f3eb28e87cbaee779a9808c8">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.angular.element" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="onsenui.js" Id="00009ee69eba50302961e56bccffb5edcbc70be1140b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="MSApp.execUnsafeLocalFunction" />
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.activeElement.blur" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.adoptNode" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createElementNS" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.dispatchEvent" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.scrollWidth" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.elementFromPoint" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.implementation.createHTMLDocument" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="navigator._createPageScope" />
+          <AitFeature Name="navigator._events" />
+          <AitFeature Name="navigator._pushPageDOM" />
+          <AitFeature Name="navigator.app.exitApp" />
+          <AitFeature Name="navigator.msPointerEnabled" />
+          <AitFeature Name="navigator.pages.length" />
+          <AitFeature Name="navigator.pointerEnabled" />
+          <AitFeature Name="navigator.pushPage" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="navigator.userAgent.indexOf" />
+          <AitFeature Name="navigator.userAgent.match" />
+          <AitFeature Name="window.FastClick" />
+          <AitFeature Name="window.HTMLElement" />
+          <AitFeature Name="window.Modernizr" />
+          <AitFeature Name="window.PointerEvent" />
+          <AitFeature Name="window.WinJS._execUnsafe" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.document.addEventListener" />
+          <AitFeature Name="window.document.body" />
+          <AitFeature Name="window.document.createElement" />
+          <AitFeature Name="window.document.querySelectorAll" />
+          <AitFeature Name="window.document.removeEventListener" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.getSelection" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.matchMedia" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.msRequestAnimationFrame" />
+          <AitFeature Name="window.navigator.appVersion" />
+          <AitFeature Name="window.navigator.userAgent" />
+          <AitFeature Name="window.navigator.userAgent.indexOf" />
+          <AitFeature Name="window.navigator.userAgent.match" />
+          <AitFeature Name="window.navigator.userAgent.substr" />
+          <AitFeature Name="window.oRequestAnimationFrame" />
+          <AitFeature Name="window.ons.isWebView" />
+          <AitFeature Name="window.ons.notification" />
+          <AitFeature Name="window.ons.orientation" />
+          <AitFeature Name="window.ons.platform" />
+          <AitFeature Name="window.ontouchstart" />
+          <AitFeature Name="window.orientation" />
+          <AitFeature Name="window.outerWidth" />
+          <AitFeature Name="window.pageXOffset" />
+          <AitFeature Name="window.pageYOffset" />
+          <AitFeature Name="window.postMessage" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="onsenui.min.js" Id="0000becd4bca7dd235dec6e78da3bbca76d1ffef7991">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="MSApp.execUnsafeLocalFunction" />
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.activeElement.blur" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.adoptNode" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createElementNS" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.dispatchEvent" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.scrollWidth" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.elementFromPoint" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.implementation.createHTMLDocument" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="navigator._createPageScope" />
+          <AitFeature Name="navigator._events" />
+          <AitFeature Name="navigator._pushPageDOM" />
+          <AitFeature Name="navigator.app.exitApp" />
+          <AitFeature Name="navigator.msPointerEnabled" />
+          <AitFeature Name="navigator.pages.length" />
+          <AitFeature Name="navigator.pointerEnabled" />
+          <AitFeature Name="navigator.pushPage" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="navigator.userAgent.indexOf" />
+          <AitFeature Name="navigator.userAgent.match" />
+          <AitFeature Name="window.FastClick" />
+          <AitFeature Name="window.HTMLElement" />
+          <AitFeature Name="window.Modernizr" />
+          <AitFeature Name="window.PointerEvent" />
+          <AitFeature Name="window.WinJS._execUnsafe" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.document.addEventListener" />
+          <AitFeature Name="window.document.body" />
+          <AitFeature Name="window.document.createElement" />
+          <AitFeature Name="window.document.querySelectorAll" />
+          <AitFeature Name="window.document.removeEventListener" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.getSelection" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.matchMedia" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.msRequestAnimationFrame" />
+          <AitFeature Name="window.navigator.appVersion" />
+          <AitFeature Name="window.navigator.userAgent" />
+          <AitFeature Name="window.navigator.userAgent.indexOf" />
+          <AitFeature Name="window.navigator.userAgent.match" />
+          <AitFeature Name="window.navigator.userAgent.substr" />
+          <AitFeature Name="window.oRequestAnimationFrame" />
+          <AitFeature Name="window.ons.isWebView" />
+          <AitFeature Name="window.ons.notification" />
+          <AitFeature Name="window.ons.orientation" />
+          <AitFeature Name="window.ons.platform" />
+          <AitFeature Name="window.ontouchstart" />
+          <AitFeature Name="window.orientation" />
+          <AitFeature Name="window.outerWidth" />
+          <AitFeature Name="window.pageXOffset" />
+          <AitFeature Name="window.pageYOffset" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="onsenui_all.js" Id="00002cd6ea678dda3be5a9ef75e2ee022bed3ce4845a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="MSApp.execUnsafeLocalFunction" />
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.activeElement.blur" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.adoptNode" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.style" />
+          <AitFeature Name="document.body.style.webkitAnimation" />
+          <AitFeature Name="document.body.style.webkitTransition" />
+          <AitFeature Name="document.createComment" />
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createElementNS" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.dispatchEvent" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.scrollWidth" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.elementFromPoint" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.getElementsByName" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.implementation.createHTMLDocument" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="location.href.replace" />
+          <AitFeature Name="location.replace" />
+          <AitFeature Name="navigator._createPageScope" />
+          <AitFeature Name="navigator._events" />
+          <AitFeature Name="navigator._pushPageDOM" />
+          <AitFeature Name="navigator.app.exitApp" />
+          <AitFeature Name="navigator.msPointerEnabled" />
+          <AitFeature Name="navigator.pages.length" />
+          <AitFeature Name="navigator.pointerEnabled" />
+          <AitFeature Name="navigator.pushPage" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="navigator.userAgent.indexOf" />
+          <AitFeature Name="navigator.userAgent.match" />
+          <AitFeature Name="window.FastClick" />
+          <AitFeature Name="window.HTMLElement" />
+          <AitFeature Name="window.Modernizr" />
+          <AitFeature Name="window.PointerEvent" />
+          <AitFeature Name="window.WinJS._execUnsafe" />
+          <AitFeature Name="window.XMLHttpRequest" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.angular.bootstrap" />
+          <AitFeature Name="window.angular.callbacks" />
+          <AitFeature Name="window.angular.element" />
+          <AitFeature Name="window.cancelAnimationFrame" />
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.clearTimeout" />
+          <AitFeature Name="window.document.addEventListener" />
+          <AitFeature Name="window.document.body" />
+          <AitFeature Name="window.document.createElement" />
+          <AitFeature Name="window.document.querySelectorAll" />
+          <AitFeature Name="window.document.removeEventListener" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.getSelection" />
+          <AitFeature Name="window.history.pushState" />
+          <AitFeature Name="window.history.state" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.location.href" />
+          <AitFeature Name="window.location.reload" />
+          <AitFeature Name="window.matchMedia" />
+          <AitFeature Name="window.mozCancelAnimationFrame" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.msRequestAnimationFrame" />
+          <AitFeature Name="window.name.replace" />
+          <AitFeature Name="window.navigator" />
+          <AitFeature Name="window.navigator.appVersion" />
+          <AitFeature Name="window.navigator.userAgent" />
+          <AitFeature Name="window.navigator.userAgent.indexOf" />
+          <AitFeature Name="window.navigator.userAgent.match" />
+          <AitFeature Name="window.navigator.userAgent.substr" />
+          <AitFeature Name="window.oRequestAnimationFrame" />
+          <AitFeature Name="window.ons.isWebView" />
+          <AitFeature Name="window.ons.notification" />
+          <AitFeature Name="window.ons.orientation" />
+          <AitFeature Name="window.ons.platform" />
+          <AitFeature Name="window.ontouchstart" />
+          <AitFeature Name="window.orientation" />
+          <AitFeature Name="window.outerWidth" />
+          <AitFeature Name="window.pageXOffset" />
+          <AitFeature Name="window.pageYOffset" />
+          <AitFeature Name="window.postMessage" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setInterval" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.webkitCancelAnimationFrame" />
+          <AitFeature Name="window.webkitCancelRequestAnimationFrame" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="onsenui_all.min.js" Id="000048f281af66502bb6da73bd85989414aa39339ee4">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="MSApp.execUnsafeLocalFunction" />
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.activeElement.blur" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.adoptNode" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.style" />
+          <AitFeature Name="document.body.style.webkitAnimation" />
+          <AitFeature Name="document.body.style.webkitTransition" />
+          <AitFeature Name="document.createComment" />
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createElementNS" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.dispatchEvent" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.scrollWidth" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.elementFromPoint" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.getElementsByName" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.implementation.createHTMLDocument" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="location.href.replace" />
+          <AitFeature Name="location.replace" />
+          <AitFeature Name="navigator._createPageScope" />
+          <AitFeature Name="navigator._events" />
+          <AitFeature Name="navigator._pushPageDOM" />
+          <AitFeature Name="navigator.app.exitApp" />
+          <AitFeature Name="navigator.msPointerEnabled" />
+          <AitFeature Name="navigator.pages.length" />
+          <AitFeature Name="navigator.pointerEnabled" />
+          <AitFeature Name="navigator.pushPage" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="navigator.userAgent.indexOf" />
+          <AitFeature Name="navigator.userAgent.match" />
+          <AitFeature Name="window.FastClick" />
+          <AitFeature Name="window.HTMLElement" />
+          <AitFeature Name="window.Modernizr" />
+          <AitFeature Name="window.PointerEvent" />
+          <AitFeature Name="window.WinJS._execUnsafe" />
+          <AitFeature Name="window.XMLHttpRequest" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.angular.bootstrap" />
+          <AitFeature Name="window.angular.callbacks" />
+          <AitFeature Name="window.angular.element" />
+          <AitFeature Name="window.cancelAnimationFrame" />
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.clearTimeout" />
+          <AitFeature Name="window.document.addEventListener" />
+          <AitFeature Name="window.document.body" />
+          <AitFeature Name="window.document.createElement" />
+          <AitFeature Name="window.document.querySelectorAll" />
+          <AitFeature Name="window.document.removeEventListener" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.getSelection" />
+          <AitFeature Name="window.history.pushState" />
+          <AitFeature Name="window.history.state" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.location.href" />
+          <AitFeature Name="window.location.reload" />
+          <AitFeature Name="window.matchMedia" />
+          <AitFeature Name="window.mozCancelAnimationFrame" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.msRequestAnimationFrame" />
+          <AitFeature Name="window.name.replace" />
+          <AitFeature Name="window.navigator" />
+          <AitFeature Name="window.navigator.appVersion" />
+          <AitFeature Name="window.navigator.userAgent" />
+          <AitFeature Name="window.navigator.userAgent.indexOf" />
+          <AitFeature Name="window.navigator.userAgent.match" />
+          <AitFeature Name="window.navigator.userAgent.substr" />
+          <AitFeature Name="window.oRequestAnimationFrame" />
+          <AitFeature Name="window.ons.isWebView" />
+          <AitFeature Name="window.ons.notification" />
+          <AitFeature Name="window.ons.orientation" />
+          <AitFeature Name="window.ons.platform" />
+          <AitFeature Name="window.ontouchstart" />
+          <AitFeature Name="window.orientation" />
+          <AitFeature Name="window.outerWidth" />
+          <AitFeature Name="window.pageXOffset" />
+          <AitFeature Name="window.pageYOffset" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setInterval" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.webkitCancelAnimationFrame" />
+          <AitFeature Name="window.webkitCancelRequestAnimationFrame" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

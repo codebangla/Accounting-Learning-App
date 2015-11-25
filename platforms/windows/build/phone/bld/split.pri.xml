@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="1895Romi.LearnAccounting" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>240</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="config.xml" uri="ms-resource://1895Romi.LearnAccounting/Files/config.xml">
+				<Candidate type="Path">
+					<Value>config.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="SplashScreen.png" uri="ms-resource://1895Romi.LearnAccounting/Files/images/SplashScreen.png"/>
+				<NamedResource name="SplashScreenPhone.png" uri="ms-resource://1895Romi.LearnAccounting/Files/images/SplashScreenPhone.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\SplashScreenPhone.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://1895Romi.LearnAccounting/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square30x30Logo.png" uri="ms-resource://1895Romi.LearnAccounting/Files/images/Square30x30Logo.png"/>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://1895Romi.LearnAccounting/Files/images/Square310x310Logo.png"/>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://1895Romi.LearnAccounting/Files/images/Square44x44Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://1895Romi.LearnAccounting/Files/images/Square70x70Logo.png"/>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://1895Romi.LearnAccounting/Files/images/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square71x71Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://1895Romi.LearnAccounting/Files/images/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://1895Romi.LearnAccounting/Files/images/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Wide310x150Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="www">
+				<NamedResource name="cordova.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/cordova.js">
+					<Candidate type="Path">
+						<Value>www\cordova.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cordova_plugins.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/cordova_plugins.js">
+					<Candidate type="Path">
+						<Value>www\cordova_plugins.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="index.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/index.html">
+					<Candidate type="Path">
+						<Value>www\index.html</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="html">
+					<NamedResource name="about.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/about.html">
+						<Candidate type="Path">
+							<Value>www\html\about.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="detail.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail.html">
+						<Candidate type="Path">
+							<Value>www\html\detail.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="home.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/home.html">
+						<Candidate type="Path">
+							<Value>www\html\home.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="main.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/main.html">
+						<Candidate type="Path">
+							<Value>www\html\main.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="master.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/master.html">
+						<Candidate type="Path">
+							<Value>www\html\master.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="menu.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/menu.html">
+						<Candidate type="Path">
+							<Value>www\html\menu.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="page1.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/page1.html">
+						<Candidate type="Path">
+							<Value>www\html\page1.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="page2.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/page2.html">
+						<Candidate type="Path">
+							<Value>www\html\page2.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="rate.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/rate.html">
+						<Candidate type="Path">
+							<Value>www\html\rate.html</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="detail">
+						<NamedResource name="1.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/1.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\1.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="10.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/10.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\10.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="11.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/11.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\11.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="12.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/12.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\12.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="13.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/13.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\13.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="14.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/14.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\14.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="2.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/2.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\2.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="20.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/20.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\20.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="3.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/3.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\3.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="4.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/4.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\4.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="5.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/5.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\5.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="50.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/50.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\50.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="6.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/6.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\6.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="7.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/7.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\7.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="8.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/8.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\8.html</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="9.html" uri="ms-resource://1895Romi.LearnAccounting/Files/www/html/detail/9.html">
+							<Candidate type="Path">
+								<Value>www\html\detail\9.html</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="js">
+					<NamedResource name="app.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/js/app.js">
+						<Candidate type="Path">
+							<Value>www\js\app.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="controllers.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/js/controllers.js">
+						<Candidate type="Path">
+							<Value>www\js\controllers.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="platformOverrides.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/js/platformOverrides.js">
+						<Candidate type="Path">
+							<Value>www\js\platformOverrides.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="lib">
+					<ResourceMapSubtree name="angular">
+						<NamedResource name="angular-csp.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/angular/angular-csp.css">
+							<Candidate type="Path">
+								<Value>www\lib\angular\angular-csp.css</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="angular-ui-router.min.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/angular/angular-ui-router.min.js">
+							<Candidate type="Path">
+								<Value>www\lib\angular\angular-ui-router.min.js</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="angular.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/angular/angular.js">
+							<Candidate type="Path">
+								<Value>www\lib\angular\angular.js</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="angular.min.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/angular/angular.min.js">
+							<Candidate type="Path">
+								<Value>www\lib\angular\angular.min.js</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="angular.min.js.gzip" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/angular/angular.min.js.gzip">
+							<Candidate type="Path">
+								<Value>www\lib\angular\angular.min.js.gzip</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="angular.min.js.map" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/angular/angular.min.js.map">
+							<Candidate type="Path">
+								<Value>www\lib\angular\angular.min.js.map</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="bower.json" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/angular/bower.json">
+							<Candidate type="Path">
+								<Value>www\lib\angular\bower.json</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="README.md" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/angular/README.md">
+							<Candidate type="Path">
+								<Value>www\lib\angular\README.md</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="onsen">
+						<ResourceMapSubtree name="css">
+							<NamedResource name="onsen-css-components-blue-basic-theme.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/onsen-css-components-blue-basic-theme.css">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\css\onsen-css-components-blue-basic-theme.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="onsen-css-components-blue-theme.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/onsen-css-components-blue-theme.css">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\css\onsen-css-components-blue-theme.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="onsen-css-components-dark-theme.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/onsen-css-components-dark-theme.css">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\css\onsen-css-components-dark-theme.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="onsen-css-components-default.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/onsen-css-components-default.css">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\css\onsen-css-components-default.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="onsen-css-components-purple-theme.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/onsen-css-components-purple-theme.css">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\css\onsen-css-components-purple-theme.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="onsen-css-components-sunshine-theme.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/onsen-css-components-sunshine-theme.css">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\css\onsen-css-components-sunshine-theme.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="onsen-css-components.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/onsen-css-components.css">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\css\onsen-css-components.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="onsenui.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/onsenui.css">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\css\onsenui.css</Value>
+								</Candidate>
+							</NamedResource>
+							<ResourceMapSubtree name="font_awesome">
+								<ResourceMapSubtree name="css">
+									<NamedResource name="font-awesome.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/font_awesome/css/font-awesome.css">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\font_awesome\css\font-awesome.css</Value>
+										</Candidate>
+									</NamedResource>
+									<NamedResource name="font-awesome.min.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/font_awesome/css/font-awesome.min.css">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\font_awesome\css\font-awesome.min.css</Value>
+										</Candidate>
+									</NamedResource>
+								</ResourceMapSubtree>
+								<ResourceMapSubtree name="fonts">
+									<NamedResource name="fontawesome-webfont.eot" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.eot">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.eot</Value>
+										</Candidate>
+									</NamedResource>
+									<NamedResource name="fontawesome-webfont.svg" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.svg">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.svg</Value>
+										</Candidate>
+									</NamedResource>
+									<NamedResource name="fontawesome-webfont.ttf" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.ttf">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.ttf</Value>
+										</Candidate>
+									</NamedResource>
+									<NamedResource name="fontawesome-webfont.woff" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.woff">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.woff</Value>
+										</Candidate>
+									</NamedResource>
+									<NamedResource name="FontAwesome.otf" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/font_awesome/fonts/FontAwesome.otf">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\font_awesome\fonts\FontAwesome.otf</Value>
+										</Candidate>
+									</NamedResource>
+								</ResourceMapSubtree>
+							</ResourceMapSubtree>
+							<ResourceMapSubtree name="ionicons">
+								<ResourceMapSubtree name="css">
+									<NamedResource name="ionicons.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/ionicons/css/ionicons.css">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\ionicons\css\ionicons.css</Value>
+										</Candidate>
+									</NamedResource>
+									<NamedResource name="ionicons.min.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/ionicons/css/ionicons.min.css">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\ionicons\css\ionicons.min.css</Value>
+										</Candidate>
+									</NamedResource>
+								</ResourceMapSubtree>
+								<ResourceMapSubtree name="fonts">
+									<NamedResource name="ionicons.eot" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/ionicons/fonts/ionicons.eot">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\ionicons\fonts\ionicons.eot</Value>
+										</Candidate>
+									</NamedResource>
+									<NamedResource name="ionicons.svg" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/ionicons/fonts/ionicons.svg">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\ionicons\fonts\ionicons.svg</Value>
+										</Candidate>
+									</NamedResource>
+									<NamedResource name="ionicons.ttf" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/ionicons/fonts/ionicons.ttf">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\ionicons\fonts\ionicons.ttf</Value>
+										</Candidate>
+									</NamedResource>
+									<NamedResource name="ionicons.woff" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/css/ionicons/fonts/ionicons.woff">
+										<Candidate type="Path">
+											<Value>www\lib\onsen\css\ionicons\fonts\ionicons.woff</Value>
+										</Candidate>
+									</NamedResource>
+								</ResourceMapSubtree>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="js">
+							<NamedResource name="onsenui.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/js/onsenui.js">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\js\onsenui.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="onsenui.min.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/js/onsenui.min.js">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\js\onsenui.min.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="onsenui_all.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/js/onsenui_all.js">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\js\onsenui_all.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="onsenui_all.min.js" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/js/onsenui_all.min.js">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\js\onsenui_all.min.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="stylus">
+							<NamedResource name="blue-basic-theme.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/blue-basic-theme.styl">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\stylus\blue-basic-theme.styl</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="blue-theme.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/blue-theme.styl">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\stylus\blue-theme.styl</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="dark-theme.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/dark-theme.styl">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\stylus\dark-theme.styl</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="purple-theme.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/purple-theme.styl">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\stylus\purple-theme.styl</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="sunshine-theme.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/sunshine-theme.styl">
+								<Candidate type="Path">
+									<Value>www\lib\onsen\stylus\sunshine-theme.styl</Value>
+								</Candidate>
+							</NamedResource>
+							<ResourceMapSubtree name="components">
+								<NamedResource name="alert-dialog.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/alert-dialog.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\alert-dialog.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="button-bar.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/button-bar.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\button-bar.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="button.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/button.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\button.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="checkbox.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/checkbox.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\checkbox.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="dialog.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/dialog.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\dialog.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="global.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/global.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\global.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="index.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/index.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\index.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="list.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/list.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\list.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="modal.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/modal.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\modal.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="navigation-bar.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/navigation-bar.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\navigation-bar.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="notification.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/notification.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\notification.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="page.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/page.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\page.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="popover.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/popover.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\popover.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="radio-button.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/radio-button.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\radio-button.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="range.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/range.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\range.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="search-input.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/search-input.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\search-input.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="switch.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/switch.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\switch.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="tab-bar.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/tab-bar.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\tab-bar.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="text-input.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/text-input.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\text-input.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="textarea.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/textarea.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\textarea.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="toolbar-button.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/toolbar-button.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\toolbar-button.styl</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="util.styl" uri="ms-resource://1895Romi.LearnAccounting/Files/www/lib/onsen/stylus/components/util.styl">
+									<Candidate type="Path">
+										<Value>www\lib\onsen\stylus\components\util.styl</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="style">
+					<NamedResource name="style.css" uri="ms-resource://1895Romi.LearnAccounting/Files/www/style/style.css">
+						<Candidate type="Path">
+							<Value>www\style\style.css</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

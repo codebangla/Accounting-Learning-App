@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ROMI-PC</Machine>
+    <WindowsUser>Romi</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>1895Romi.LearnAccounting</PackageIdentityName>
+    <IntermediateOutputPath>F:\Cordova\play\onsenui\accapp\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>070522025D3CD4725C266132E8244C9870622987A632CEB05E9F75A4C1F5C857</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>1895Romi.LearnAccounting_1.1.0.0_neutral__t7fpg15r42te8</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>1895Romi.LearnAccounting_t7fpg15r42te8!io.cordova.hellocordova</RegisteredUserModeAppID>
+    <RegisteredPackageID>1895Romi.LearnAccounting</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=56DBEB3B-4F3D-43A9-BCB8-87034D19EA47</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="F:\Cordova\play\onsenui\accapp\platforms\windows\build\windows\Release\AnyCPU\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-17T12:09:06.633</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-13T09:24:19.998</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-13T09:24:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-13T09:24:20.001</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-13T09:24:20.002</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-13T09:24:20.004</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-13T09:24:20.005</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-13T09:24:20.006</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\images\accounting-cycle.png">
+      <PackagePath>www\images\accounting-cycle.png</PackagePath>
+      <Modified>2015-07-17T11:25:31.367</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+      <Modified>2015-07-17T11:25:31.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+      <Modified>2015-07-17T11:25:32.021</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\js\app.js">
+      <PackagePath>www\js\app.js</PackagePath>
+      <Modified>2015-07-17T11:25:32.047</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\js\controllers.js">
+      <PackagePath>www\js\controllers.js</PackagePath>
+      <Modified>2015-07-17T11:25:32.048</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\js\platformOverrides.js">
+      <PackagePath>www\js\platformOverrides.js</PackagePath>
+      <Modified>2015-07-17T11:25:32.049</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\angular\angular-ui-router.min.js">
+      <PackagePath>www\lib\angular\angular-ui-router.min.js</PackagePath>
+      <Modified>2015-07-17T11:25:32.052</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\angular\angular.js">
+      <PackagePath>www\lib\angular\angular.js</PackagePath>
+      <Modified>2015-07-17T11:25:32.077</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\angular\angular.min.js">
+      <PackagePath>www\lib\angular\angular.min.js</PackagePath>
+      <Modified>2015-07-17T11:25:32.084</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\js\onsenui.js">
+      <PackagePath>www\lib\onsen\js\onsenui.js</PackagePath>
+      <Modified>2015-07-17T11:25:32.133</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\js\onsenui.min.js">
+      <PackagePath>www\lib\onsen\js\onsenui.min.js</PackagePath>
+      <Modified>2015-07-17T11:25:32.144</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\js\onsenui_all.js">
+      <PackagePath>www\lib\onsen\js\onsenui_all.js</PackagePath>
+      <Modified>2015-07-17T11:25:32.172</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\js\onsenui_all.min.js">
+      <PackagePath>www\lib\onsen\js\onsenui_all.min.js</PackagePath>
+      <Modified>2015-07-17T11:25:32.195</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail.html">
+      <PackagePath>www\html\detail.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.037</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\1.html">
+      <PackagePath>www\html\detail\1.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.022</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\10.html">
+      <PackagePath>www\html\detail\10.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.023</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\11.html">
+      <PackagePath>www\html\detail\11.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.023</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\12.html">
+      <PackagePath>www\html\detail\12.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.024</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\13.html">
+      <PackagePath>www\html\detail\13.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.025</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\14.html">
+      <PackagePath>www\html\detail\14.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.027</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\2.html">
+      <PackagePath>www\html\detail\2.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.027</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\20.html">
+      <PackagePath>www\html\detail\20.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.028</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\3.html">
+      <PackagePath>www\html\detail\3.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.029</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\4.html">
+      <PackagePath>www\html\detail\4.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.030</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\5.html">
+      <PackagePath>www\html\detail\5.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.031</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\50.html">
+      <PackagePath>www\html\detail\50.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.032</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\6.html">
+      <PackagePath>www\html\detail\6.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.033</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\7.html">
+      <PackagePath>www\html\detail\7.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.034</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\8.html">
+      <PackagePath>www\html\detail\8.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.035</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\detail\9.html">
+      <PackagePath>www\html\detail\9.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.036</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\home.html">
+      <PackagePath>www\html\home.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.038</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\main.html">
+      <PackagePath>www\html\main.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.040</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\master.html">
+      <PackagePath>www\html\master.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.041</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\menu.html">
+      <PackagePath>www\html\menu.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.042</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\page1.html">
+      <PackagePath>www\html\page1.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.043</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\html\page2.html">
+      <PackagePath>www\html\page2.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.044</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+      <Modified>2015-07-17T11:25:32.046</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\angular\angular-csp.css">
+      <PackagePath>www\lib\angular\angular-csp.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.049</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\font_awesome\css\font-awesome.css">
+      <PackagePath>www\lib\onsen\css\font_awesome\css\font-awesome.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.088</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\font_awesome\css\font-awesome.min.css">
+      <PackagePath>www\lib\onsen\css\font_awesome\css\font-awesome.min.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.089</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\ionicons\css\ionicons.css">
+      <PackagePath>www\lib\onsen\css\ionicons\css\ionicons.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.092</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\ionicons\css\ionicons.min.css">
+      <PackagePath>www\lib\onsen\css\ionicons\css\ionicons.min.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.095</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\onsen-css-components-blue-basic-theme.css">
+      <PackagePath>www\lib\onsen\css\onsen-css-components-blue-basic-theme.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.098</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\onsen-css-components-blue-theme.css">
+      <PackagePath>www\lib\onsen\css\onsen-css-components-blue-theme.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\onsen-css-components-dark-theme.css">
+      <PackagePath>www\lib\onsen\css\onsen-css-components-dark-theme.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.100</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\onsen-css-components-default.css">
+      <PackagePath>www\lib\onsen\css\onsen-css-components-default.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.104</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\onsen-css-components-purple-theme.css">
+      <PackagePath>www\lib\onsen\css\onsen-css-components-purple-theme.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.108</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\onsen-css-components-sunshine-theme.css">
+      <PackagePath>www\lib\onsen\css\onsen-css-components-sunshine-theme.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.109</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\onsen-css-components.css">
+      <PackagePath>www\lib\onsen\css\onsen-css-components.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.112</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\onsenui.css">
+      <PackagePath>www\lib\onsen\css\onsenui.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.114</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\style\style.css">
+      <PackagePath>www\style\style.css</PackagePath>
+      <Modified>2015-07-17T11:25:32.197</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\angular\angular.min.js.gzip">
+      <PackagePath>www\lib\angular\angular.min.js.gzip</PackagePath>
+      <Modified>2015-07-17T11:25:31.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\angular\angular.min.js.map">
+      <PackagePath>www\lib\angular\angular.min.js.map</PackagePath>
+      <Modified>2015-07-17T11:25:31.431</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\angular\bower.json">
+      <PackagePath>www\lib\angular\bower.json</PackagePath>
+      <Modified>2015-07-17T11:25:32.086</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\angular\README.md">
+      <PackagePath>www\lib\angular\README.md</PackagePath>
+      <Modified>2015-07-17T11:25:31.437</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.eot">
+      <PackagePath>www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.eot</PackagePath>
+      <Modified>2015-07-17T11:25:31.459</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\ionicons\fonts\ionicons.eot">
+      <PackagePath>www\lib\onsen\css\ionicons\fonts\ionicons.eot</PackagePath>
+      <Modified>2015-07-17T11:25:31.496</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.svg">
+      <PackagePath>www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.svg</PackagePath>
+      <Modified>2015-07-17T11:25:31.467</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\ionicons\fonts\ionicons.svg">
+      <PackagePath>www\lib\onsen\css\ionicons\fonts\ionicons.svg</PackagePath>
+      <Modified>2015-07-17T11:25:31.507</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.ttf">
+      <PackagePath>www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.ttf</PackagePath>
+      <Modified>2015-07-17T11:25:31.476</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\ionicons\fonts\ionicons.ttf">
+      <PackagePath>www\lib\onsen\css\ionicons\fonts\ionicons.ttf</PackagePath>
+      <Modified>2015-07-17T11:25:31.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.woff">
+      <PackagePath>www\lib\onsen\css\font_awesome\fonts\fontawesome-webfont.woff</PackagePath>
+      <Modified>2015-07-17T11:25:31.477</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\ionicons\fonts\ionicons.woff">
+      <PackagePath>www\lib\onsen\css\ionicons\fonts\ionicons.woff</PackagePath>
+      <Modified>2015-07-17T11:25:31.518</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\css\font_awesome\fonts\FontAwesome.otf">
+      <PackagePath>www\lib\onsen\css\font_awesome\fonts\FontAwesome.otf</PackagePath>
+      <Modified>2015-07-17T11:25:31.480</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\blue-basic-theme.styl">
+      <PackagePath>www\lib\onsen\stylus\blue-basic-theme.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.762</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\blue-theme.styl">
+      <PackagePath>www\lib\onsen\stylus\blue-theme.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.765</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\alert-dialog.styl">
+      <PackagePath>www\lib\onsen\stylus\components\alert-dialog.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\button-bar.styl">
+      <PackagePath>www\lib\onsen\stylus\components\button-bar.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.780</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\button.styl">
+      <PackagePath>www\lib\onsen\stylus\components\button.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.781</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\checkbox.styl">
+      <PackagePath>www\lib\onsen\stylus\components\checkbox.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.791</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\dialog.styl">
+      <PackagePath>www\lib\onsen\stylus\components\dialog.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\global.styl">
+      <PackagePath>www\lib\onsen\stylus\components\global.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\index.styl">
+      <PackagePath>www\lib\onsen\stylus\components\index.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\list.styl">
+      <PackagePath>www\lib\onsen\stylus\components\list.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\modal.styl">
+      <PackagePath>www\lib\onsen\stylus\components\modal.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.814</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\navigation-bar.styl">
+      <PackagePath>www\lib\onsen\stylus\components\navigation-bar.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\notification.styl">
+      <PackagePath>www\lib\onsen\stylus\components\notification.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.828</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\page.styl">
+      <PackagePath>www\lib\onsen\stylus\components\page.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.832</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\popover.styl">
+      <PackagePath>www\lib\onsen\stylus\components\popover.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.839</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\radio-button.styl">
+      <PackagePath>www\lib\onsen\stylus\components\radio-button.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.843</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\range.styl">
+      <PackagePath>www\lib\onsen\stylus\components\range.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.848</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\search-input.styl">
+      <PackagePath>www\lib\onsen\stylus\components\search-input.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.855</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\switch.styl">
+      <PackagePath>www\lib\onsen\stylus\components\switch.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.857</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\tab-bar.styl">
+      <PackagePath>www\lib\onsen\stylus\components\tab-bar.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.867</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\text-input.styl">
+      <PackagePath>www\lib\onsen\stylus\components\text-input.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.870</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\textarea.styl">
+      <PackagePath>www\lib\onsen\stylus\components\textarea.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\toolbar-button.styl">
+      <PackagePath>www\lib\onsen\stylus\components\toolbar-button.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.878</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\components\util.styl">
+      <PackagePath>www\lib\onsen\stylus\components\util.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.883</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\dark-theme.styl">
+      <PackagePath>www\lib\onsen\stylus\dark-theme.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\purple-theme.styl">
+      <PackagePath>www\lib\onsen\stylus\purple-theme.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.899</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\www\lib\onsen\stylus\sunshine-theme.styl">
+      <PackagePath>www\lib\onsen\stylus\sunshine-theme.styl</PackagePath>
+      <Modified>2015-07-17T11:25:31.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+      <Modified>2015-07-17T11:25:31.978</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Cordova\play\onsenui\accapp\platforms\windows\build\windows\Release\AnyCPU\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-07-17T12:09:06.528</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

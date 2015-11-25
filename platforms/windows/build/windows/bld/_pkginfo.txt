@@ -1,0 +1,1 @@
+F:\Cordova\play\onsenui\accapp\platforms\windows\AppPackages\CordovaApp.Windows_1.1.2.2_AnyCPU_Test\CordovaApp.Windows_1.1.2.2_AnyCPU.appx

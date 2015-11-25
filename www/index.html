@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- CSP support mode (required for Windows Universal apps): https://docs.angularjs.org/api/ng/directive/ngCsp -->
+<html lang="en" ng-csp="">
+<head>
+	<meta charset="utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes" />
+
+	<!-- JS dependencies (order matters!) -->
+	<script src="js/platformOverrides.js"></script>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular/angular-ui-router.min.js"></script>
+	<script src="lib/onsen/js/onsenui.min.js"></script>
+
+	<!-- CSS dependencies -->
+	<link rel="stylesheet" href="lib/onsen/css/onsenui.css" />
+	<link rel="stylesheet" href="lib/onsen/css/onsen-css-components-blue-basic-theme.css" />
+
+	<!-- CSP support mode (required for Windows Universal apps) -->
+	<link rel="stylesheet" href="lib/angular/angular-csp.css" />
+	<link rel="stylesheet" href="style/style.css">
+
+
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+
+
+
+</head>
+<body ng-app="myApp">
+
+	<ons-tabbar var="myTabbar" animation="none">
+		<ons-tab ui-sref="navigator.home">
+			<ons-icon icon="ion-home"></ons-icon>
+			<!--<span style="font-size: 14px">About</span>-->
+		</ons-tab>
+		<ons-tab ui-sref="navigator.about">
+			<ons-icon icon="ion-information-circled"></ons-icon>
+			<!--<span style="font-size: 14px">About</span>-->
+		</ons-tab>
+		<ons-tab ui-sref="navigator.rate">
+			<ons-icon icon="ion-star"></ons-icon>
+			<!--<span style="font-size: 14px">Rate</span>-->
+		</ons-tab>
+	</ons-tabbar>
+
+	<ons-template id="html/tab1.html">
+		<ons-navigator title="Navigator" var="myNavigator">
+		</ons-navigator>
+	</ons-template>
+
+	<ons-template id="html/tab2.html">
+		<ons-sliding-menu menu-page="html/menu.html" side="left" var="myMenu" type="reveal" max-slide-distance="260px" swipeable="true">
+		</ons-sliding-menu>
+	</ons-template>
+
+</body>
+</html>

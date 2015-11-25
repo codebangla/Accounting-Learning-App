@@ -1,0 +1,192 @@
+﻿<ons-page>
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button class="toolbar-button--quiet" ui-sref="^">
+                <ons-icon class="ion-ios-arrow-back ons-back-button__icon"></ons-icon>
+
+            </ons-toolbar-button>
+        </div>
+
+        <div class="center">Journal</div>
+    </ons-toolbar>
+
+
+    <ons-row>
+
+        <ons-col>
+            <header>
+                <span class="item-title">{{item.title}}</span>
+                <span class="item-label">{{item.label}}</span>
+            </header>
+            <p class="page-item">
+                Companies initially record transactions in chronological order.
+                For each transaction, the journal shows the debit and credit effects on specific
+                accounts.<br/>
+                Here is a practical example to show journal, ledger, trial balance, income statement and balance sheet.
+            </p>
+            <p class="page-item">
+
+            </p>
+
+            <p class="page-item">
+                <table>
+                    <tr>
+                        <th>PIONEER ADVERTISING AGENCY</th>
+                    </tr>
+                    <tr>
+                        <td>On October 1, C. R. Byrd invests $10,000 cash in an advertising<br/>company called Pioneer Advertising Agency.</td>
+                    </tr>
+                    <tr>
+                        <td>On October 1, Pioneer purchases office equipment costing<br/>$5,000 by signing a 3-month, 12%, $5,000 note payable.</td>
+                    </tr>
+                    <tr>
+                        <td>On October 2, Pioneer receives a $1,200 cash advance from<br/>R. Knox, a client, for advertising services that are expected<br/>to be completed by December 31</td>
+                    </tr>
+                    <tr>
+                        <td>On October 3, Pioneer pays office rent for October in<br/>cash, $900</td>
+                    </tr>
+                    <tr>
+                        <td>On October 9, Pioneer hires four employees to begin work on<br/>October 15. Each employee is to receive a weekly salary of $500<br/>for a 5-day work week, payable every 2 weeks&mdash;first payment<br/>made on October 26.</td>
+                    </tr>
+                    <tr>
+                        <td>On October 20, C. R. Byrd withdraws $500 cash for<br/>personal use.</td>
+                    </tr>
+                    <tr>
+                        <td>On October 26, Pioneer owes employee salaries of $4,000<br/>and pays them in cash. (See October 9 event.)</td>
+                    </tr>
+                    <tr>
+                        <td>On October 31, Pioneer receives $10,000 in cash from Copa<br/>Company for advertising services performed in October.</td>
+                    </tr>
+                </table>
+            </p>
+
+            <p class="page-item">
+            <b>General Journal</b>
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Account Titles</th>
+                        <th>Debit ($)</th>
+                        <th>Credit ($)</th>
+                    </tr>
+                    <tr>
+                        <td>Oct 1</td>
+                        <td>Cash</td>
+                        <td>10,000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Owner&rsquo;s Capital</td>
+                        <td></td>
+                        <td>10,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Equipment</td>
+                        <td>5,000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp; Notes Payable</td>
+                        <td></td>
+                        <td>5,000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cash</td>
+                        <td>1,200</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>&nbsp;&nbsp;&nbsp; Unearned Service Revenue&nbsp;</td>
+                        <td></td>
+                        <td>1,200</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rent Expense&nbsp;</td>
+                        <td>900</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp; Cash</td>
+                        <td></td>
+                        <td>900</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Prepaid Insurance</td>
+                        <td>600</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp; Cash</td>
+                        <td></td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Supplies</td>
+                        <td>2,500</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp; Accounts Payable</td>
+                        <td></td>
+                        <td>2,500</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Owner&rsquo;s Drawings</td>
+                        <td>500</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp; Cash</td>
+                        <td></td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>Salaries and Wages Expense</td>
+                        <td>4,000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp; Cash</td>
+                        <td></td>
+                        <td>4,000</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>Cash</td>
+                        <td>10,000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp; Service Revenue</td>
+                        <td></td>
+                        <td>10,000</td>
+                    </tr>
+                </table>
+            </p>
+
+            <p class="page-item"></p>
+
+        </ons-col>
+    </ons-row>
+
+
+    <br>
+
+</ons-page>

@@ -1,0 +1,85 @@
+﻿<ons-page>
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button class="toolbar-button--quiet" ui-sref="^">
+                <ons-icon class="ion-ios-arrow-back ons-back-button__icon"></ons-icon>
+
+            </ons-toolbar-button>
+        </div>
+
+        <div class="center">Debit and Credit</div>
+    </ons-toolbar>
+
+
+    <ons-row>
+
+        <ons-col>
+            <header>
+                <span class="item-title">{{item.title}}</span>
+                <span class="item-label">{{item.label}}</span>
+            </header>
+            <p class="page-item">
+
+                <b>Debit:</b> Left side of an account<br/>
+                <b>Credit:</b> Right side of an account
+            </p>
+            <p class="page-item">
+            <table >
+                <tr >
+                    <th colspan="2">Account</th>
+
+                </tr>
+                <tr>
+                    <td >Debit</td>
+                    <td >Credit</td>
+                </tr>
+            </table>
+            </p>
+            <p class="page-item">
+            <table>
+                <tr>
+                    <th>Account</th>
+                    <th>Debit</th>
+                    <th>Credit</th>
+                </tr>
+                <tr>
+                    <td>Assets</td>
+                    <td>+</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Liabilites</td>
+                    <td>-</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>Owner&rsquo;s<br/>Capital</td>
+                    <td>-</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>Owner's Drawings</td>
+                    <td>+</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Revenues</td>
+                    <td>-</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>Expense</td>
+                    <td>+</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            </p>
+
+        </ons-col>
+    </ons-row>
+
+
+    <br>
+
+</ons-page>
